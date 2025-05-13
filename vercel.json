@@ -1,19 +1,9 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "ProyectoFinal.html",
-      "use": "@vercel/static-build"
-    }
-  ],
+  "cleanUrls": true,
+  "trailingSlash": false,
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/ProyectoFinal.html"
-    }
-  ],
-  "settings": {
-    "buildCommand": "echo 'Building static HTML site'",
-    "outputDirectory": ""
-  }
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/ProyectoFinal.html" }
+  ]
 }
