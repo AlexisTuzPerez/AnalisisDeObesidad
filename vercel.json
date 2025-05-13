@@ -11,5 +11,9 @@
       "src": "/(.*)",
       "dest": "/ProyectoFinal.html"
     }
-  ]
+  ],
+  "settings": {
+    "buildCommand": "echo 'Building static HTML site'",
+    "outputDirectory": ""
+  }
 }
